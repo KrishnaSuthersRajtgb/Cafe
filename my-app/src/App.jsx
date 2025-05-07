@@ -49,6 +49,7 @@ function App() {
           <Route path='/buynow' element={<Buynow/>}/>
         </Routes>   
       </Router>
+      <></>
     </WishlistProvider>
    
   );
