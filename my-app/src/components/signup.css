@@ -1,0 +1,110 @@
+.signup-name {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: rgb(255, 202, 96);
+    font-size: 2rem;
+    animation: fadeInDown 1.2s ease-in-out;
+    text-shadow: 1px 1px 3px black;
+  }
+  
+  .signup-continue {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: rgb(255, 202, 96);
+    animation: fadeInUp 1.2s ease-in-out;
+    text-shadow: 1px 1px 3px black;
+  }
+  
+  .total-signup {
+    background-image: url(../../public/signup.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    animation: backgroundZoom 20s ease-in-out infinite alternate;
+  }
+  
+  .we-never-share {
+    color: white;
+    font-size: 1rem;
+    animation: fadeIn 2s ease;
+    text-shadow: 1px 1px 3px black;
+  }
+  
+  .signup-method {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 100px;
+    height: 70%;
+    width: 35%;
+    border: 7px solid gray;
+    margin-left: 500px;
+    margin-bottom: 300px;
+    backdrop-filter: blur(6px);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    animation: slideUpFade 1.5s ease;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  
+  .signup-method:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideUpFade {
+    0% {
+      transform: translateY(60px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes backgroundZoom {
+    0% {
+      background-size: 100%;
+    }
+    100% {
+      background-size: 105%;
+    }
+  }
+  

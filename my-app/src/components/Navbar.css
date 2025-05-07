@@ -1,0 +1,26 @@
+.name{
+    color: brown;
+    font-size: x-large;
+}
+
+.link1{
+ text-decoration: none;
+ padding-left: 15px;
+ font-size: 21px;
+ color: brown;
+}
+.navhead{
+    background-color: #C2B280;
+}
+/* .bg-body-tertiary bg-info{
+    background-color: black;
+} */
+
+/* @media (max-width:768px){
+.navhead{
+    width: 400px;
+} */
+
+.nav-total-head{
+    margin-top: -7px;
+}

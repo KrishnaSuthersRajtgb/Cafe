@@ -1,0 +1,151 @@
+/* Marquee */
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  background: linear-gradient(to right, #fffbe7, #fdf5e6);
+  border-bottom: 2px solid #d69d16;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.marquee-content {
+  display: inline-block;
+  animation: marquee 60s linear infinite;
+}
+
+.marquee-content span {
+  display: inline-block;
+  padding: 0 30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #4a2c12;
+  text-shadow: 1px 1px 2px #f1c40f;
+}
+
+/* Marquee Animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Navigation Links */
+.link2 {
+  text-decoration: none;
+  padding-left: 15px;
+  font-size: 22px;
+  color: #d69d16;
+  text-shadow: 1px 1px 2px #b8740c;
+  transition: all 0.4s ease;
+}
+
+.link2:hover {
+  color: #ffcc33;
+  text-shadow: 2px 2px 4px #ffa500;
+  transform: scale(1.1);
+}
+
+/* Navbar Flex Layout */
+.me-auto {
+  display: flex;
+  gap: 15px;
+  animation: slideInLeft 1.2s ease;
+}
+
+/* Scroll Container */
+.scroll-bar {
+  /* background: url("../../public/welcomepose.jpg") center/cover no-repeat fixed; */
+  height: 670px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scrollbar-color: #d69d16 transparent;
+  animation: fadeInSlow 2s ease forwards;
+}
+
+/* Product Cards */
+.card1 {
+  width: 19rem;
+  margin-top: 25px;
+  margin-left: 45px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: popIn 1s ease forwards;
+}
+
+.card1:hover {
+  transform: scale(1.12) rotate(-1deg);
+  box-shadow: 0 0 25px rgba(218, 165, 32, 0.6);
+  z-index: 2;
+}
+
+/* Cards Container */
+.total-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  animation: fadeInUp 1.3s ease-in-out;
+}
+
+/* Buy Now Button */
+.buy-now {
+  margin-left: 15px;
+  background-color: #d69d16;
+  color: white;
+  font-weight: bold;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.buy-now:hover {
+  background-color: #b8740c;
+  transform: scale(1.1) translateY(-2px);
+  box-shadow: 0 0 10px #f1c40f;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInSlow {
+  0% { opacity: 0; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}

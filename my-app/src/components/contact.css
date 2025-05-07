@@ -1,0 +1,59 @@
+.cafe{
+display: flex;
+flex-direction: column;
+background-image: url(../../public/Contact.webp);
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+width: 100vw;
+overflow: hidden;
+}
+.first{
+    margin-left: -10px;
+    color: red;
+    text-shadow: 2px 1px red;
+}
+.sec{
+    text-align: center;
+     margin-top: 30px; 
+    margin-bottom: 0px;
+    color: rgb(255, 0, 0);
+    text-shadow: 2px 1px red;
+}
+.paras{
+text-align: center;
+    color: blue;
+}
+.contact-form{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    min-height: 400px;
+}
+.Name{
+    width: 100%;
+}
+/* .fullcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top:100px;
+    height: 75%;
+    width: 50%;
+    border: 7px solid gray;
+    margin-right: 60px;
+} */
+ .contact-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 79%;
+    width: 70%;
+    border: 7px solid grey;
+    margin-left: 250px;
+    margin-top: 60px;
+    backdrop-filter: blur(3px) ;
+ }
